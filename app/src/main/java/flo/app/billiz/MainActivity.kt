@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        castViews()
+//        castViews()
     }
 
     override fun onResume() {
@@ -34,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         btnSignUp.setOnClickListener{
             clearingErrors()
             validatingSignUp()
+            castViews()
         }
     }
 
